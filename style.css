@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*----------------------head-----------------------------*/
+
+a {
+    text-decoration: none;
+}
+
+#navbar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    z-index: 2;
+    background: crimson;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 50px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 21px;
+}
+
+#menu-btn {
+    position: fixed;
+    color: white;
+    cursor: pointer;
+    right: 5px;
+    top: 0;
+    text-align: right;
+    margin: 10px;
+}
+
+#menu-btn-1 {
+    position: fixed;
+    z-index: 2;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    right: 5%;
+}
+
+
+/*home section style*/
+
+.home {
+    font-family: sans-serif;
+    display: flex;
+    background: linear-gradient(#1212, #1245), url(images-3.jpg) no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    color: #fff;
+    padding: 20px;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-section .text-1 {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.home .home-section .text-2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: -3px;
+    margin-bottom: 20px;
+}
+
+.home .home-section .text-3 {
+    font-size: 46px;
+    margin: 5px 0;
+    margin-bottom: 20px;
+}
+
+.home .home-section .text-3 span {
+    color: crimson;
+    font-weight: 700;
+}
+
+
+/*---------about----------------*/
+
+section {
+    padding: 100px 0;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #000;
+    transform: translateX(-50%);
+}
+
+.title::after {
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    color: crimson;
+    bottom: -7px;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-contant {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left {
+    width: 45%;
+}
+
+.right {
+    width: 55%;
+}
+
+.right a {
+    text-decoration: none;
+    border: 1px solid crimson;
+    background: crimson;
+    border-radius: 10px;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.3s;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.right a:hover {
+    background: #fff;
+    color: crimson;
+    border: 2px solid black;
+}
+
+.text-4 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-5 {
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.right p {
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/*----------------------------------------------------conatct from-------------------------------------------------------*/
+
+.about-contact {
+    display: flex;
+    background: lightblue;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.left-1 {
+    flex: 40%;
+    text-align: center;
+    color: #000;
+    padding: 40px;
+}
+
+.right-1 {
+    flex: 60%;
+    text-align: center;
+    color: #000;
+    background: rgb(240, 240, 242);
+    padding: 40px 60px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 58px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+form {
+    color: #000;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(9, 9, 9);
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 10px;
+    color: blue;
+    display: block;
+}
+
+button {
+    border: 3px solid crimson;
+    background: crimson;
+    border-radius: 20px;
+    padding: 10px 10px;
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #fff;
+    color: crimson;
+}
+
+tr td:first-child {
+    padding-right: 20px;
+}
+
+tr td {
+    padding: 40px;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #000;
+    transform: translateX(-50%);
+}
+
+.title::after {
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    color: crimson;
+    bottom: -7px;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*----------0-----team--------------------------*/
+
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.team .team-content img {
+    width: 100px;
+    position: relative;
+    top: -70px;
+    left: calc(50% - 60px);
+}
+
+.team-content {
+    flex-basis: 20%;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 20px;
+    border-radius: 20px;
+    transition: all 0.3s forwards;
+    cursor: pointer;
+}
+
+.team-content h3 {
+    margin-top: -50px;
+    font-size: 25px;
+}
+
+.team-content p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.team-content:hover {
+    background: #ccc;
+    color: crimson;
+    border: 2px solid #ccc;
+}
+
+
+/*--------------------footer----------------------*/
+
+.footer {
+    margin: 10;
+    padding: 10px 50px;
+    background: rgb(0, 0, 0);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.footer-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.col-4 {
+    color: #fff;
+    margin-top: 50px;
+}
+
+.col-4 h1 {
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.col-4 a {
+    display: block;
+    line-height: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.col-4 a:hover {
+    background: green;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.fa-facebook-official,
+.fa-instagram,
+.fa-twitter,
+.fa-linkedin-square {
+    padding: 0 5px;
+}
+
+.copyright {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+@media(max-width:990px) {
+    .max-width {
+        max-width: 990px;
+        padding: 0 60px;
+        margin: auto;
+        right: 5%;
+    }
+}
+
+@media(max-width:990px) {
+    .max-width {
+        max-width: 990px;
+        padding: 0 40px;
+        margin: auto;
+        right: 5%;
+    }
+    .home .max-width {
+        margin: auto 0 auto 20px;
+    }
+    .home {
+        font-family: sans-serif;
+        background: linear-gradient(#1212, #1245), url(images-3.jpg) no-repeat center;
+        height: 100vh;
+        min-height: 500px;
+        color: #fff;
+        padding: 5px;
+    }
+}
